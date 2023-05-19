@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #edf1f4;
+}
+.login {
+  position: relative;
+  width: 380px;
+  padding: 80px 50px 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+}
+
+
+
+.login form {
+  position: relative;
+  width: 100%;
+}
+.login form h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  line-height: 0.9em;
+}
+.login form h2 span {
+  font-weight: 300;
+  font-size: 0.65em;
+}
+.login form .inputBox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.login form .inputBox input[type="text"],
+.login form .inputBox input[type="password"] {
+  width: 100%;
+  padding: 15px 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  inset: -5px -5px 10px #fff;
+}
+.login form labal {
+  display: flex;
+  align-items: center;
+}
+.login form input[type="checkbox"] {
+  margin-right: 5px;
+}
+.login form .inputBox input[type="submit"] {
+  margin-top: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+  width: 100%;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.login form .inputBox input[type="submit"]:focus {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+}
+.login .scan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.login .scan .scanQr img {
+  width: 50%;
+  height: auto;
+  margin-left: 4.5rem;
+  margin-top: 3rem;
+  box-shadow: inset 25px 25px 30px rgba(20, 2, 2, 0.911),
+    inset -20px -20px 10px #fff;
+  border: 20px solid #edf1f4;
+  border-radius: 20px;
+}
+.login .scan .name p {
+  margin-top: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+  width: 100%;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  animation: animateShadow 15s linear infinite;
+}
+@keyframes animateShadow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.961);
+  }
+  
+   40% {
+    box-shadow: 0 0 20px rgb(180, 14, 188);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(10, 196, 10);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(15, 15, 200, 0.952);
+  }
+}
